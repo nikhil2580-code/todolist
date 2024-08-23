@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val database = TaskDatabase.getDatabase(this)
         taskDao = database.taskDao()
 
+        //change 1gi
+
         // Set up RecyclerView for categories
         binding.recyclerViewCategories.layoutManager = LinearLayoutManager(this)
         taskDao.getAllCategories().observe(this, Observer { categories ->
